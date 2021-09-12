@@ -24,7 +24,7 @@ For ios:
 4. run $cd ios && pod install
 5. then open aspireUI.xcworkspace from ios directory with XCode and run normally on simulator of your choice.
 
-![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/first.png?raw=true)
-![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/second.png?raw=true)
-![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/third.png?raw=true)
-![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/fourth.png?raw=true)
+![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/screenshots/first.png?raw=true)
+![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/screenshots/second.png?raw=true)
+![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/screenshots/third.png?raw=true)
+![alt text](https://github.com/[ankitinghh]/[aspire-clone]/blob/[master]/screenshots/fourth.png?raw=true)
