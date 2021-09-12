@@ -1,5 +1,5 @@
 export {default as DebitCard} from './debitCard';
-export {default as LimitSetting} from './limitSetting';
+export {default as SetLimit} from './setLimit';
 export {
   HomeScreen,
   PaymentsScreen,

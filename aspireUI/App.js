@@ -5,7 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Colors, Icons} from './src/constants';
 import {
   DebitCard,
-  LimitSetting,
+  SetLimit,
   CreditScreen,
   ProfileScreen,
   PaymentsScreen,
@@ -71,7 +71,7 @@ const App = () => {
           />
           <Stack.Screen
             name="SetLimit"
-            component={LimitSetting}
+            component={SetLimit}
             options={{headerShown: false}}
           />
         </Stack.Navigator>

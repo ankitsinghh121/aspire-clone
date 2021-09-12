@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   backButton: {height: 24, width: 24},
 });
 
-const LimitSetting = props => {
+const SetLimit = props => {
   const amounts = [5000, 10000, 20000];
   const [amount, setAmount] = useState('');
 
@@ -216,4 +216,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(null, mapDispatchToProps)(LimitSetting);
+export default connect(null, mapDispatchToProps)(SetLimit);
