@@ -115,6 +115,8 @@ const styles = StyleSheet.create({
     color: Colors.control,
     fontSize: 18,
   },
+  primaryViewContent: {marginHorizontal: 24},
+  backButton: {height: 24, width: 24},
 });
 
 const LimitSetting = props => {
@@ -132,11 +134,11 @@ const LimitSetting = props => {
     <SafeAreaView style={styles.containerstyle}>
       <StatusBar barStyle="light-content" />
       <View style={styles.primaryView}>
-        <View style={{marginHorizontal: 24}}>
+        <View style={styles.primaryViewContent}>
           <View style={styles.header}>
             <TouchableOpacity
               onPress={() => props.navigation.goBack()}
-              style={{height: 24, width: 24}}>
+              style={styles.backButton}>
               <Icons.ArrowLeft fill={Colors.control} />
             </TouchableOpacity>
             <Icons.Home fill={Colors.primary} />
@@ -149,9 +151,7 @@ const LimitSetting = props => {
           <View>
             <View style={styles.firstrow}>
               <Icons.PickupCar />
-              <Text style={styles.setLimitText}>
-                Set a weekly debit card spending limit
-              </Text>
+              <Text style={styles.setLimitText}>{Texts.weeklyLimit}</Text>
             </View>
             <View style={styles.textInptContainer}>
               <View style={styles.currencyView}>
@@ -169,9 +169,7 @@ const LimitSetting = props => {
                 />
               </View>
             </View>
-            <Text style={styles.messageText}>
-              Here weekly means the last 7 days - not the calendar week
-            </Text>
+            <Text style={styles.messageText}>{Texts.weeklyMeansText}</Text>
             <View style={styles.amountButtonConatiner}>
               <TouchableOpacity
                 onPress={() => onAmountPress(0)}
@@ -204,7 +202,7 @@ const LimitSetting = props => {
               }
             }}
             style={styles.saveButton}>
-            <Text style={styles.saveText}>Save</Text>
+            <Text style={styles.saveText}>{Texts.save}</Text>
           </TouchableOpacity>
         </View>
       </View>

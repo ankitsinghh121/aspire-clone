@@ -11,7 +11,7 @@ import {
 import {connect} from 'react-redux';
 import {DebitCard, ListItem, ProgressBar} from '../components';
 import AccountInfo from '../components/accountInfo';
-import {Colors, Icons} from '../constants';
+import {Colors, Icons, Texts} from '../constants';
 import {fetchData, setLimit} from '../redux/dataReducer';
 
 const styles = StyleSheet.create({
@@ -38,13 +38,13 @@ const DebitCardScreen = props => {
 
   const listItems = [
     {
-      title: 'Top-up account',
-      subTitle: 'Deposit money to your account to use with card',
+      title: Texts.topUpAccount,
+      subTitle: Texts.depositMoney,
       icon: Icons.Insight,
     },
     {
-      title: 'Weekly spending limit',
-      subTitle: 'You haven’t set any spending limit on card',
+      title: Texts.weeklyLimit,
+      subTitle: Texts.havenSetLimit,
       icon: Icons.Meter,
       action: () => {
         if (props.isLimitSet) {
@@ -55,14 +55,15 @@ const DebitCardScreen = props => {
       value: props.isLimitSet,
     },
     {
-      title: 'Freeze card',
-      subTitle: 'Your debit card is currently active',
+      title: Texts.freezeCard,
+      subTitle: Texts.cardActive,
       icon: Icons.Freeze,
       action: () => {},
+      value: false,
     },
     {
-      title: 'Deactivated cards',
-      subTitle: 'Your previously deactivated cards',
+      title: Texts.deactivatedCard,
+      subTitle: Texts.prevdeactivatedCards,
       icon: Icons.Deactivate,
     },
   ];
