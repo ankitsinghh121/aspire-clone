@@ -33,7 +33,7 @@ jobs:
       - name: Build Android
         run: |
           echo "Build Android"
-          cd android && ./gradlew assembleRelease
+          cd aspireUi/android && ./gradlew assembleRelease
         shell: bash
 
       - name: Upload Build Artifact
