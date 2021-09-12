@@ -27,7 +27,7 @@ jobs:
       - name: Dependency Install
         run: |
           echo "yarn install"
-          yarn
+          cd aspireUi && yarn
           echo "Pod Install"
           cd ios && pod install
         shell: bash
