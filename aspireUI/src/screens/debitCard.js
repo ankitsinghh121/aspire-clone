@@ -12,6 +12,7 @@ import {connect} from 'react-redux';
 import {DebitCard, ListItem, ProgressBar} from '../components';
 import AccountInfo from '../components/accountInfo';
 import {Colors, Icons, Texts} from '../constants';
+import {commaSeparated} from '../constants/helpers';
 import {fetchData, setLimit} from '../redux/dataReducer';
 
 const styles = StyleSheet.create({
@@ -44,7 +45,9 @@ const DebitCardScreen = props => {
     },
     {
       title: Texts.weeklyLimit,
-      subTitle: Texts.havenSetLimit,
+      subTitle: props.isLimitSet
+        ? `${Texts.weeklyLimitIs} ${commaSeparated(props.limit)}`
+        : Texts.havenSetLimit,
       icon: Icons.Meter,
       action: () => {
         if (props.isLimitSet) {

@@ -7,6 +7,7 @@ const texts = {
   topUpAccount: 'Top-up account',
   depositMoney: 'Deposit money to your account to use with card',
   weeklyLimit: 'Weekly spending limit',
+  weeklyLimitIs: 'Your weekly spending limit is S$',
   havenSetLimit: 'You haven’t set any spending limit on card',
   freezeCard: 'Freeze card',
   cardActive: 'Your debit card is currently active',
