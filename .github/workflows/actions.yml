@@ -24,12 +24,10 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Dependency Install
+      - name: Yarn Install
         run: |
           echo "yarn install"
           cd aspireUi && yarn
-          echo "Pod Install"
-          cd ios && pod install
         shell: bash
 
       - name: Build Android
@@ -43,6 +41,12 @@ jobs:
         with:
           name: android-build
           path: aspireUI/android/app/build/outputs/apk/release/app-release.apk
+
+      - name: Pod Install
+        run: |
+          echo "Pod Install"
+          cd ios && pod install
+        shell: bash
 
       - name: Switch XCode Version to 12.5
         run: sudo xcode-select -s /Applications/Xcode_12.5.app
