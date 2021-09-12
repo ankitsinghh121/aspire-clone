@@ -22,7 +22,7 @@ jobs:
       # Use node 10.X
       - uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: '12.x'
 
       - name: Dependency Install
         run: |
